@@ -2,7 +2,7 @@
  * http://usejsdoc.org/
  */
 var nconf = require('nconf'), fs = require('fs'),
-	archiver = require('archiver'),nodemailer = require('nodemailer');;
+	archiver = require('archiver'),nodemailer = require('nodemailer');
 
 (function main() {
 	nconf.file({ file: '..\\conf\\config.json' });
