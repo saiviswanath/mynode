@@ -2,5 +2,11 @@
 	"name" : "Compression",
 	"description" : "File Compression",
 	"version" : "0.1.0",
-	"main" : "lib\\ReportHelper.js"
+	"main" : "lib\\ReportHelper.js",
+	"dependencies": {
+		"nconf": "^0.8.4",
+		"archiver": "1.1.0",
+		"nodemailer": "2.5.0",
+		"async" : "2.0.1"
+	}
 }
