@@ -3,6 +3,6 @@
 	"command": "node",
 	"isShellCommand": true,
 	"showOutput": "always",
-	"args": ["C:\\Users\\viswa\\AppData\\Roaming\\npm\\node_modules\\sampletypescript\\node_modules\\typescript\\bin\\tsc", "-p", "${workspaceRoot}\\SampleTypescript"],
+	"args": ["C:\\Users\\viswa\\AppData\\Roaming\\npm\\node_modules\\typescript\\bin\\tsc", "-p", "${workspaceRoot}\\SampleTypescript"],
 	"problemMatcher": "$tsc"
 }
