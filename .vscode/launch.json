@@ -2,10 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "MetaService Launch",
+            // Hit Ctrl + F5 for running
+            "name": "MyService Launch",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/MetadataService/app.js",
+            "program": "${workspaceRoot}/MyService/src/service.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
@@ -15,33 +16,36 @@
                 "--nolazy"
             ],
             "env": {
-                "NODE_ENV": "development"
+                "NODE_ENV": "development",
+                "APP_CONFIG": "{\"hello\" : \"hai\", {\"hai\" : \"Hello\"}}"
+            },
+            "externalConsole": true,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "Run mocha for My Service",
+            "type": "node",
+            "request": "launch",
+            "program": "C:\\Users\\saiviswanath.p\\AppData\\Roaming\\npm\\node_modules\\mocha\\bin\\_mocha",
+            "stopOnEntry": false,
+            "args": [
+                "${workspaceRoot}/MyService/test/*.js",
+                "--no-timeouts"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "testing"
             },
             "externalConsole": false,
             "sourceMaps": false,
             "outDir": null
         },
-
-        {  
-            "name": "Run mocha for SampleTypeScript",
-            "type": "node",
-            "request": "launch",
-            "program": "C:\\Users\\viswa\\AppData\\Roaming\\npm\\node_modules\\mocha\\bin\\_mocha",
-            "stopOnEntry": false,
-            "args": ["${workspaceRoot}/SampleTypeScript/test/*.js", "--no-timeouts"],
-             "cwd": "${workspaceRoot}",
-             "preLaunchTask": null,
-            "runtimeExecutable": null,
-            "runtimeArgs": [
-                "--nolazy"
-            ],
-            "env": { "NODE_ENV": "testing"},
-            "externalConsole": false,
-            "sourceMaps": false,
-            "outDir": null
-         },
-
-
         {
             "name": "Attach",
             "type": "node",
