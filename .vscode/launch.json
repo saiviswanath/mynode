@@ -19,7 +19,7 @@
                 "NODE_ENV": "development",
                 "APP_CONFIG": "{\"hello\" : \"hai\", {\"hai\" : \"Hello\"}}"
             },
-            "externalConsole": true,
+            "console": "integratedTerminal",
             "sourceMaps": false,
             "outDir": null
         },
@@ -27,7 +27,7 @@
             "name": "Run mocha for My Service",
             "type": "node",
             "request": "launch",
-            "program": "C:\\Users\\saiviswanath.p\\AppData\\Roaming\\npm\\node_modules\\mocha\\bin\\_mocha",
+            "program": "${workspaceRoot}/MyService/node_modules/mocha/bin/_mocha",
             "stopOnEntry": false,
             "args": [
                 "${workspaceRoot}/MyService/test/*.js",
@@ -42,7 +42,7 @@
             "env": {
                 "NODE_ENV": "testing"
             },
-            "externalConsole": false,
+            "console": "integratedTerminal",
             "sourceMaps": false,
             "outDir": null
         },

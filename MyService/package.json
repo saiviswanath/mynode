@@ -7,8 +7,11 @@
     "start": "sh ./scripts/run.sh"
   },
   "dependencies": {
-    "typescript": "1.8.10",
     "express": "4.14.0"
+  },
+  "devDependencies": {
+     "mocha" : "3.0.2",
+     "chai" : "3.5.0"
   },
   "author": "viswanath",
   "license": "ISC"
